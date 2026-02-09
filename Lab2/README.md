@@ -1,5 +1,6 @@
-# Lab 2 – Web Technologies
+# Lab 2 – Django and Basic Git Operations
 
-- Capture and analyze network traffic
-- Identify protocols used in web communication
-- Understand client-server interaction
+- Created Django project
+- Ran development server successfully
+- Django version: 5.2.11
+nderstand client-server interaction
