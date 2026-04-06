@@ -1,0 +1,79 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block content %}
+<div style="margin: 20px; font-family: 'Times New Roman', serif; text-align: center; font-size: 12px;">
+
+    <div style="display: inline-block; text-align: center;">
+        <p style="font-weight: bold; margin-bottom: 5px; font-size: 14px;">Table 1: Table <br> of Fruits and <br> Their Prices</p>
+        <table border="1" style="border-collapse: collapse; margin: auto;">
+            <tr style="font-weight: bold;">
+                <td style="padding: 5px;">Fruit</td>
+                <td style="padding: 5px;">Price</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">Apple</td>
+                <td style="padding: 5px;">$0.25</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">Orange</td>
+                <td style="padding: 5px;">$0.50</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">Banana</td>
+                <td style="padding: 5px;">$1.00</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">Pineapple</td>
+                <td style="padding: 5px;">$2.00</td>
+            </tr>
+            <tr style="font-weight: bold;">
+                <td style="padding: 5px;">Total</td>
+                <td style="padding: 5px;">$3.75</td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br>
+
+    <p style="font-size: 14px; font-weight: bold;">Table 2: A more complex sample table</p>
+    <table border="1" style="border-collapse: collapse; margin: auto; width: 80%; background-color: #f2f2f2;">
+        <tr>
+            <td rowspan="2" style="width: 30%; padding: 0;">
+                <img src="{% static 'desert.jpg' %}" alt="Desert" style="width: 100%; display: block;">
+            </td>
+            <td colspan="4" style="padding: 10px; text-align: center; font-weight: bold;">
+                Camelid comparison <br> Approximate as of 6/2011
+            </td>
+        </tr>
+        <tr style="font-weight: bold;">
+            <td style="padding: 5px;"># of humps</td>
+            <td style="padding: 5px;">Indigenous region</td>
+            <td style="padding: 5px;">Spits?</td>
+            <td style="padding: 5px;">Produces wool?</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; background-color: #f2f2f2;">Dromedary</td>
+            <td>1</td>
+            <td>Arabian Peninsula</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; background-color: #f2f2f2;">Camels (bactrian)</td>
+            <td>2</td>
+            <td>Africa/Asia</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold; background-color: #f2f2f2;">Llamas</td>
+            <td>1</td>
+            <td>Andes Mountains</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+</div>
+{% endblock content %}

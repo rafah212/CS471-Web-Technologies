@@ -1,0 +1,26 @@
+{% extends "layouts/base.html" %}
+{% block title %} نتائج الاستعلام {% endblock %}
+
+{% block content %}
+<div style="padding: 20px;">
+    <h2>Books Found (From Database):</h2>
+    <hr>
+    {% if books %}
+        {# اللاب طلب عرض الـ ID والعنوان بشكل بسيط #}
+        {% for obj in books %}
+            <p>
+                <strong>ID:</strong> {{ obj.id }} <br>
+                <strong>Title:</strong> {{ obj.title }} <br>
+                <strong>Author:</strong> {{ obj.author }} <br>
+                <strong>Price:</strong> {{ obj.price }} SR
+            </p>
+            <hr>
+        {% endfor %}
+    {% else %}
+        <p>No books found in the database matching this query.</p>
+    {% endif %}
+    
+    <br>
+    <a href="{% url 'books.search' %}">Back to Search</a>
+</div>
+{% endblock %}
